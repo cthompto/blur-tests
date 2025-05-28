@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chelsea Thompto" />
+    <meta property="og:title" content="Blur Tests" />
+    <link rel="stylesheet" href="../style.css" />
+    <script>
+        function myFunction(this) {
+          console.log(this.class);
+            //var element = document.getElementById("myDIV");
+          //element.classList.remove("mystyle");
+        }
+    </script>
+  </head>
+  <body>
+    <div class="navfloat">
+      <a href="../">Home</a> |
+      <a href="../test1">Test 1</a> |
+      <a class="active" href="./">Test 2</a> 
+    </div>
+    <h1>Test 2</h1>
+    <div class="test2-holder">
+      <img onclick="myFunction()" class="test2-holder test2-in" src="../assets/blurdem1.jpg" />
+      <img class="test2-holder test2-in" src="../assets/blurdem2.jpg" />
+      <img class="test2-holder test2-in" src="../assets/blurdem3.jpg" />
+      <img class="test2-holder test2-in" src="../assets/blurdem4.jpg" />
+    </div>
+    
+  </body>
+</html>

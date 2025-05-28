@@ -1,0 +1,86 @@
+/*general style*/
+
+body {
+    background-color: dimgrey;
+    color: azure;
+}
+
+/*title page style*/
+
+.title-holder {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.title-holder img {
+    width: 20%;
+    margin: 5px;
+    
+    animation-duration: 5s;
+    animation-name: blur-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blur-out {
+    from {
+        filter: blur(0px);
+      }
+    
+    to {
+        filter: blur(10px);
+      }
+}
+
+/*test 1 style*/
+
+.test1-holder {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.test1-holder img {
+    width: 20%;
+    margin: 5px;
+    filter: blur(10px);
+}
+
+.test1-holder img:hover {
+    filter: blur(0px);
+}
+
+/*test 2 style*/
+
+.test2-holder {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.test2-holder img {
+    width: 20%;
+    margin: 5px;
+}
+
+.test2-in {
+    filter: blur(10px);
+}
+
+.test2-in:hover {
+    filter: blur(0px);
+}
+
+.test2-ac {
+    width: 20%;
+    margin: 5px;
+    filter: blur(0px);
+}
+
