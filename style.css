@@ -8,9 +8,10 @@ body {
 }
 
 h1 {
+    color: azure;
   font-family: "Doto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings: "ROND" 0;
   text-align: center;
@@ -18,11 +19,13 @@ h1 {
 }
 
 h1:hover {
-  font-weight: 300;
+  font-weight: 400;
+  color: aliceblue;
 }
 
 p,
 a {
+  color: azure;
   font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -120,14 +123,14 @@ a:visited {
 }
 
 @keyframes blur-out3 {
-    from {
-      filter: blur(0px);
-    }
-  
-    to {
-      filter: blur(10px);
-    }
+  from {
+    filter: blur(0px);
   }
+
+  to {
+    filter: blur(10px);
+  }
+}
 
 /*test 2 style*/
 
