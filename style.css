@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    color: azure;
+  color: azure;
   font-family: "Doto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -55,6 +55,19 @@ a:visited {
   margin: auto;
   width: 75%;
   max-width: 800px;
+}
+
+footer {
+  color: azure;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  position: relative;
+  text-align: right;
+  padding-top: 50px;
+  opacity: .5;
 }
 
 /*title page style*/
