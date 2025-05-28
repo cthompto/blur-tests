@@ -16,6 +16,7 @@ h1 {
   font-variation-settings: "ROND" 0;
   text-align: center;
   font-size: 100px;
+  filter: blur(2px);
 }
 
 h1:hover {
