@@ -1,86 +1,162 @@
 /*general style*/
 
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 body {
-    background-color: dimgrey;
-    color: azure;
+  background-color: dimgrey;
+  color: azure;
+}
+
+h1 {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  text-align: center;
+  font-size: 100px;
+}
+
+h1:hover {
+  font-weight: 300;
+}
+
+p, a {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+a:hover, a:hover:visited {
+    color: aqua;
+}
+
+a:visited {
+    color:lightgreen;
+}
+
+.navfloat {
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.desc {
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    width: 75%;
+    max-width: 800px;
 }
 
 /*title page style*/
 
 .title-holder {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 5%;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .title-holder img {
-    width: 20%;
-    margin: 5px;
-    
-    animation-duration: 5s;
-    animation-name: blur-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  width: 20%;
+  margin: 5px;
+
+  animation-duration: 5s;
+  animation-name: blur-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes blur-out {
-    from {
-        filter: blur(0px);
-      }
-    
-    to {
-        filter: blur(10px);
-      }
+  from {
+    filter: blur(0px);
+  }
+
+  to {
+    filter: blur(10px);
+  }
 }
 
 /*test 1 style*/
 
 .test1-holder {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 5%;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .test1-holder img {
-    width: 20%;
-    margin: 5px;
-    filter: blur(10px);
+  width: 20%;
+  margin: 5px;
+  filter: blur(10px);
 }
 
 .test1-holder img:hover {
-    filter: blur(0px);
+  filter: blur(0px);
 }
 
 /*test 2 style*/
 
 .test2-holder {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 5%;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .test2-holder img {
-    width: 20%;
-    margin: 5px;
+  width: 20%;
+  margin: 5px;
 }
 
 .test2-in {
-    filter: blur(10px);
+  filter: blur(10px);
 }
 
 .test2-in:hover {
-    filter: blur(0px);
+  filter: blur(0px);
 }
 
 .test2-ac {
-    width: 20%;
-    margin: 5px;
-    filter: blur(0px);
+  width: 20%;
+  margin: 5px;
+  filter: blur(0px);
 }
 
+/*test 3 style*/
+
+.test3-holder {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.test3-holder img {
+  width: 20%;
+  margin: 5px;
+}
+
+#img1b {
+  filter: blur(10px);
+}
+
+#img2b {
+  filter: blur(10px);
+}
+
+#img3b {
+  filter: blur(10px);
+}
+
+#img4b {
+  filter: blur(10px);
+}

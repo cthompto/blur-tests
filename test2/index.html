@@ -8,26 +8,94 @@
     <meta property="og:title" content="Blur Tests" />
     <link rel="stylesheet" href="../style.css" />
     <script>
-        function myFunction(this) {
-          console.log(this.class);
-            //var element = document.getElementById("myDIV");
-          //element.classList.remove("mystyle");
-        }
+      window.onload = function () {
+        document.getElementById("img1").addEventListener("click", function (e) {
+          var img = document.getElementById("img1");
+          console.log(img.classList);
+          if (img.classList[1] == "test2-in") {
+            img.classList.remove("test2-in");
+            img.classList.add("test2-ac");
+          } else if (img.classList[1] == "test2-ac") {
+            img.classList.add("test2-in");
+            img.classList.remove("test2-ac");
+          }
+        });
+        document.getElementById("img2").addEventListener("click", function (e) {
+          var img = document.getElementById("img2");
+          console.log(img.classList);
+          if (img.classList[1] == "test2-in") {
+            img.classList.remove("test2-in");
+            img.classList.add("test2-ac");
+          } else if (img.classList[1] == "test2-ac") {
+            img.classList.add("test2-in");
+            img.classList.remove("test2-ac");
+          }
+        });
+        document.getElementById("img3").addEventListener("click", function (e) {
+          var img = document.getElementById("img3");
+          console.log(img.classList);
+          if (img.classList[1] == "test2-in") {
+            img.classList.remove("test2-in");
+            img.classList.add("test2-ac");
+          } else if (img.classList[1] == "test2-ac") {
+            img.classList.add("test2-in");
+            img.classList.remove("test2-ac");
+          }
+        });
+        document.getElementById("img4").addEventListener("click", function (e) {
+          var img = document.getElementById("img4");
+          console.log(img.classList);
+          if (img.classList[1] == "test2-in") {
+            img.classList.remove("test2-in");
+            img.classList.add("test2-ac");
+          } else if (img.classList[1] == "test2-ac") {
+            img.classList.add("test2-in");
+            img.classList.remove("test2-ac");
+          }
+        });
+      };
     </script>
   </head>
   <body>
     <div class="navfloat">
-      <a href="../">Home</a> |
-      <a href="../test1">Test 1</a> |
-      <a class="active" href="./">Test 2</a> 
+      <a href="../">Home</a> | <a href="../test1">Test 1</a> |
+      <a class="active" href="./">Test 2</a> |
+      <a href="../test3">Test 3</a>
     </div>
     <h1>Test 2</h1>
     <div class="test2-holder">
-      <img onclick="myFunction()" class="test2-holder test2-in" src="../assets/blurdem1.jpg" />
-      <img class="test2-holder test2-in" src="../assets/blurdem2.jpg" />
-      <img class="test2-holder test2-in" src="../assets/blurdem3.jpg" />
-      <img class="test2-holder test2-in" src="../assets/blurdem4.jpg" />
+      <img
+        id="img1"
+        class="test2-holder test2-in"
+        src="../assets/blurdem1.jpg"
+      />
+      <img
+        id="img2"
+        class="test2-holder test2-in"
+        src="../assets/blurdem2.jpg"
+      />
+      <img
+        id="img3"
+        class="test2-holder test2-in"
+        src="../assets/blurdem3.jpg"
+      />
+      <img
+        id="img4"
+        class="test2-holder test2-in"
+        src="../assets/blurdem4.jpg"
+      />
     </div>
-    
+    <div class="desc">
+      <p>
+        Hover over an image to make it clear and click on an image to keep it
+        clear.
+      </p>
+      <p>
+        This page uses the CSS 'filter' property, ':hover', and "onclick". As
+        with Test 1, the hover rule makes images clear when the mouse is over
+        the image. However, this test also allows for images to style unblurred
+        by toggling their CSS class when clicked.
+      </p>
+    </div>
   </body>
 </html>

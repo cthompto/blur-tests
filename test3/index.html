@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chelsea Thompto" />
+    <meta property="og:title" content="Blur Tests" />
+    <link rel="stylesheet" href="../style.css" />
+    <script>
+      window.onload = function () {
+        document.getElementById("img1b").addEventListener("click", function (e) {
+          var img = document.getElementById("img1b"),
+            style = window.getComputedStyle(img),
+            blur = style.getPropertyValue("filter");
+          console.log(blur);
+          if (blur == "blur(10px)") {
+            img.style.filter = "blur(8px)"
+          } else if (blur == "blur(8px)") {
+            img.style.filter = "blur(6px)"
+          } else if (blur == "blur(6px)") {
+            img.style.filter = "blur(4px)"
+          } else if (blur == "blur(4px)") {
+            img.style.filter = "blur(2px)"
+          } else if (blur == "blur(2px)") {
+            img.style.filter = "blur(0px)"
+          } else if (blur == "blur(0px)") {
+            img.style.filter = "blur(10px)"
+          }
+        });
+        document.getElementById("img2b").addEventListener("click", function (e) {
+            var img = document.getElementById("img2b"),
+            style = window.getComputedStyle(img),
+            blur = style.getPropertyValue("filter");
+          console.log(blur);
+          if (blur == "blur(10px)") {
+            img.style.filter = "blur(8px)"
+          } else if (blur == "blur(8px)") {
+            img.style.filter = "blur(6px)"
+          } else if (blur == "blur(6px)") {
+            img.style.filter = "blur(4px)"
+          } else if (blur == "blur(4px)") {
+            img.style.filter = "blur(2px)"
+          } else if (blur == "blur(2px)") {
+            img.style.filter = "blur(0px)"
+          } else if (blur == "blur(0px)") {
+            img.style.filter = "blur(10px)"
+          }
+        });
+        document.getElementById("img3b").addEventListener("click", function (e) {
+            var img = document.getElementById("img3b"),
+            style = window.getComputedStyle(img),
+            blur = style.getPropertyValue("filter");
+          console.log(blur);
+          if (blur == "blur(10px)") {
+            img.style.filter = "blur(8px)"
+          } else if (blur == "blur(8px)") {
+            img.style.filter = "blur(6px)"
+          } else if (blur == "blur(6px)") {
+            img.style.filter = "blur(4px)"
+          } else if (blur == "blur(4px)") {
+            img.style.filter = "blur(2px)"
+          } else if (blur == "blur(2px)") {
+            img.style.filter = "blur(0px)"
+          } else if (blur == "blur(0px)") {
+            img.style.filter = "blur(10px)"
+          }
+        });
+        document.getElementById("img4b").addEventListener("click", function (e) {
+            var img = document.getElementById("img4b"),
+            style = window.getComputedStyle(img),
+            blur = style.getPropertyValue("filter");
+          console.log(blur);
+          if (blur == "blur(10px)") {
+            img.style.filter = "blur(8px)"
+          } else if (blur == "blur(8px)") {
+            img.style.filter = "blur(6px)"
+          } else if (blur == "blur(6px)") {
+            img.style.filter = "blur(4px)"
+          } else if (blur == "blur(4px)") {
+            img.style.filter = "blur(2px)"
+          } else if (blur == "blur(2px)") {
+            img.style.filter = "blur(0px)"
+          } else if (blur == "blur(0px)") {
+            img.style.filter = "blur(10px)"
+          }
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <div class="navfloat">
+      <a href="../">Home</a> | <a href="../test1">Test 1</a> |
+      <a href="../test2">Test 2</a> | 
+      <a class="active" href="./">Test 3</a> 
+    </div>
+    <h1>Test 3</h1>
+    <div class="test3-holder">
+      <img
+        id="img1b"
+        class="test3-holder test3-in"
+        src="../assets/blurdem1.jpg"
+      />
+      <img
+        id="img2b"
+        class="test3-holder test3-in"
+        src="../assets/blurdem2.jpg"
+      />
+      <img
+        id="img3b"
+        class="test3-holder test3-in"
+        src="../assets/blurdem3.jpg"
+      />
+      <img
+        id="img4b"
+        class="test3-holder test3-in"
+        src="../assets/blurdem4.jpg"
+      />
+    </div>
+    <div class="desc">
+        <p>
+            Click on an image to incrementally reduce blur. Once image is clear, click to reset blur.
+        </p>
+        <p>
+            This page uses the CSS 'filter' property and "onclick". With every click, the blur filter is reduced by 2 pixels. The filter starts at a 10 pixel blur.
+        </p>
+    </div>
+  </body>
+</html>
