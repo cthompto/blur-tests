@@ -166,7 +166,7 @@ footer {
 }
 
 .test2-in:hover {
-  filter: blur(0px);
+  scale: 105%;
 }
 
 .test2-ac {
@@ -204,4 +204,69 @@ footer {
 
 #img4b {
   filter: blur(10px);
+}
+
+
+/* Michael B blur image code.*/
+
+/* Div to hold both images. */
+.test4-holder {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  top: 0;
+  left: 0;
+}
+
+/* Non-steamed under image style. */
+.image1 {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* Steamed over image style. */
+.image2 {
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: fade-out2;
+  opacity: 1;
+}
+
+/* Hover animation trigger. */
+.image2:hover {
+  animation-duration: 2s;
+   animation-iteration-count: 1;
+  animation-name: fade-out;
+  opacity: 0;
+}
+
+/* Animations for transitioning between images. */
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
