@@ -230,14 +230,12 @@ footer {
 
 /* Steamed over image style. */
 .image2 {
-  z-index: 3;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 10px;
   animation-duration: 2s;
-  animation-iteration-count: 1;
   animation-name: fade-out2;
   opacity: 1;
 }
@@ -245,7 +243,6 @@ footer {
 /* Hover animation trigger. */
 .image2:hover {
   animation-duration: 2s;
-   animation-iteration-count: 1;
   animation-name: fade-out;
   opacity: 0;
 }
